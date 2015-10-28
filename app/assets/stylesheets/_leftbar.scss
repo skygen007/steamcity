@@ -1,0 +1,73 @@
+#leftbar-wrapper {
+    background: $sidebar_background;
+    height: 100%;
+    left: 0px;
+    margin-left: 0px;
+    overflow: unset;
+    position: fixed;
+    width: $leftbar_width;
+    z-index: 1;
+    border-right: solid 1px black;
+	@include box-shadow(5px 0px 36px 3px rgba(0,0,0,0.7));
+
+}
+#logo {
+    img {
+        @include center-block();
+        width: 140px;
+        padding-top: 3px;
+        padding-bottom: 6px;
+
+    }
+}
+.nav-container {
+    width: 100%;
+ 
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        position: relative;
+        background: $sidebar_background;
+    }
+    a {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid black;
+        text-decoration: none;
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 30px;
+        color: $barColor;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-left: 25%;
+        border-left: 5px solid transparent;
+        letter-spacing: 1px;
+        @include transition(all 0.3s linear);
+    }
+    .active a{
+        color: $mainColor1;
+        border-left: 5px solid $mainColor1;
+        background-color: #1B1B1B;
+        outline: 0;
+    }
+    li:not(.active):hover a {
+        color: #eee;
+        border-left: 5px solid #FCFCFC;
+        background-color: #1B1B1B;
+    }
+    .fa {
+        position: relative;
+        top: 2px;
+        font-size: 21px;
+ 		@include transition(all 0.3s linear);
+    }
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #1B1B1B;
+    text-decoration: none;
+}

@@ -1,0 +1,63 @@
+body{
+
+width: 100%;
+display: block;
+position: relative;
+background-color: #101010;
+background-image: url(/images/fake-brick.png);
+
+}
+.overflow{
+
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+
+}
+
+
+#wrapper{
+	
+   background: url(/images/1-min.png) top center no-repeat;
+   background-size: contain;
+  
+
+}
+
+.content{
+    display: block;
+    margin-left: 27.3%;
+    width: 800px;
+    height: 1000px;
+    background-color: #272727;
+    border-color: #4E4E4E;
+    position: relative;
+    top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+
+.btn-default{
+background: linear-gradient(#484e55, #3a3f44 60%, #313539);
+}
+
+.btn-default:hover {
+    background: linear-gradient(#484e55, #3a3f44 100%, #313539);
+    border: 1px solid #6a6a6a;
+    color: white;
+}
+
+.btn-default:active{
+    background: linear-gradient(#484e55, #3a3f44 100%, #313539);
+    border: 1px solid #6a6a6a;
+    color: $mainColor1;
+}
+
+
+
+
+
+@import 'leftbar', 'rightbar';
+

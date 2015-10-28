@@ -3,6 +3,7 @@
 <head>
   <title>Dota2City.net</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -10,21 +11,26 @@
 
 <%= render 'layouts/leftbar' %>
 <%= render 'layouts/rightbar' %>
-<div class="well well-sm content">Small Well
+<div class="well well-sm content">
 <%= yield %>
+
 </div>
 </div>
 </body>
 
 
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 	
  $(document).ready(
 function() {
 $("#chat").niceScroll();
+$('[data-toggle="tooltip"]').tooltip(); 
 }
+
+
 );
 
 </script>

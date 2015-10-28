@@ -7,6 +7,11 @@ background-color: #101010;
 background-image: url(/images/fake-brick.png);
 
 }
+
+a{
+	transition: all .2s linear;
+}
+
 .overflow{
 
  overflow: hidden;
@@ -33,31 +38,53 @@ background-image: url(/images/fake-brick.png);
     border-color: #4E4E4E;
     position: relative;
     top: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
+   
+
+}
+
+#myCarousel{
+height: 201px;
+	
+}
+
+.box{
+    background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(58, 58, 58, 1) 0px, rgba(27, 27, 27, 1) 25%, rgba(27, 27, 27, 1) 100%) repeat scroll 0 0;
+    border-color: #333 #111 #111;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+    font-size: 12px;
+
+h3{
+
+    border-bottom: 0 none;
+    color: #d2d2d2;
+    font-weight: 300;
+    padding: 0 10px;
+    margin-top: 10px;
+    font-size: 12px;
+
+}
+
+.table {
+    margin-bottom: 0px;
+    background-color: transparent;
+    
+}
+
 
 }
 
 
-.btn-default{
-background: linear-gradient(#484e55, #3a3f44 60%, #313539);
-}
-
-.btn-default:hover {
-    background: linear-gradient(#484e55, #3a3f44 100%, #313539);
-    border: 1px solid #6a6a6a;
-    color: white;
-}
-
-.btn-default:active{
-    background: linear-gradient(#484e55, #3a3f44 100%, #313539);
-    border: 1px solid #6a6a6a;
-    color: $mainColor1;
-}
 
 
 
 
 
+
+
+@import 'buttons';
 @import 'leftbar', 'rightbar';
 

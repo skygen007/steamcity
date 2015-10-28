@@ -1,0 +1,15 @@
+.btn-default{
+background: linear-gradient(#484e55, #3a3f44 60%, #313539);
+}
+
+.btn-default:hover {
+    background: linear-gradient(#484e55, #3a3f44 100%, #313539);
+    border: 1px solid #6a6a6a;
+    color: white;
+}
+
+.btn-default:active{
+    background: linear-gradient(#484e55, #3a3f44 100%, #313539);
+    border: 1px solid #6a6a6a;
+    color: $mainColor1;
+}

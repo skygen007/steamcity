@@ -6,6 +6,7 @@ class WelcomeController < ApplicationController
 
   def auth_callback
     auth = request.env['omniauth.auth']
+    @test = auth
     session[:current_user] = { :nickname => auth.info['nickname'],
                                           :image => auth.info['image'],
                                           :uid => auth.uid }

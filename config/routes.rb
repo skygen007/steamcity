@@ -6,8 +6,12 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
-  get 'test', to: 'home'
+
+  get '/profile', to: 'profile#profile'
+
   post 'auth/steam/callback' => 'welcome#auth_callback'
+
+
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -3,7 +3,4 @@ class HomeController < ApplicationController
   	@title = 'title'
   end
 
-  def test
-  	@title = 'title'
-  end
 end

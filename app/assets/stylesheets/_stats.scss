@@ -1,0 +1,49 @@
+#statsContainer{
+	
+background: rgba(0, 0, 0, 0) url("/images/2.jpg") no-repeat scroll 50% 0;
+    background-size: cover;
+    height: 202px;
+    position: relative;
+  border: solid black;
+      text-align: center;
+
+
+
+.fcstat {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
+ margin: 56px 0;
+    padding: 14px 0;
+    position: relative;
+    z-index: 2;
+}
+
+label{
+	display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+
+}
+
+ b {
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4), 0 0 8px $mainColor1;
+}
+
+}
+
+#statsContainer::after {
+    background: #000000 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+
+}
+

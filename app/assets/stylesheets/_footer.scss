@@ -1,0 +1,36 @@
+footer {
+     background: #111 none repeat scroll 0 0;
+    color: #999;
+    padding: 40px;
+    /* position: relative; */
+    margin-left: 27.3%;
+    max-width: 800px;
+    border-color: #4E4E4E;
+    border-top: none;
+    border: 1px solid;
+    border-color: #4E4E4E;
+
+
+.f_menu {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+a {
+    color: #999;
+}
+
+}
+
+.f_soc.pull-right a {
+    background: #222 none repeat scroll 0 0;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px;
+}

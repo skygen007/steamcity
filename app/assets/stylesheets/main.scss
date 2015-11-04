@@ -1,53 +1,40 @@
-body{
-
-width: 100%;
-display: block;
-position: relative;
-background-color: #101010;
-background-image: url(/images/fake-brick.png);
-
+body {
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: #101010;
+    background-image: url(/images/fake-brick.png);
 }
-
-a{
-	transition: all .2s linear;
+a {
+    transition: all .2s linear;
 }
-
-.overflow{
-
- overflow: hidden;
- text-overflow: ellipsis;
- white-space: nowrap;
-
+.overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-
-
-#wrapper{
-	
-   background: url(/images/1-min.png) top center no-repeat;
-   background-size: contain;
-  
-
+#wrapper {
+    background: url(/images/1-min.png) top center no-repeat;
+    background-size: contain;
 }
-
-.content{
+.content {
     display: block;
     margin-left: 27.3%;
     width: 800px;
-    height: 1000px;
     background-color: #272727;
     border-color: #4E4E4E;
     position: relative;
     top: 25px;
-   
-
+    border-bottom: none;
+    border-radius: 0px;
+}
+#myCarousel {
+    margin-bottom: 9px;
 }
 
-#myCarousel{
-height: 201px;
-	
-}
 
-.box{
+
+.box {
     background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(58, 58, 58, 1) 0px, rgba(27, 27, 27, 1) 25%, rgba(27, 27, 27, 1) 100%) repeat scroll 0 0;
     border-color: #333 #111 #111;
     border-image: none;
@@ -56,35 +43,50 @@ height: 201px;
     color: #b0b0b0;
     margin-bottom: 10px;
     font-size: 12px;
-
-h3{
-
-    border-bottom: 0 none;
-    color: #d2d2d2;
-    font-weight: 300;
-    padding: 0 10px;
-    margin-top: 10px;
-    font-size: 12px;
-
+    h3 {
+        border-bottom: 0 none;
+        color: #d2d2d2;
+        font-weight: 300;
+        padding: 0 10px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .table {
+        margin-bottom: 0px;
+        background-color: transparent;
+    }
+}
+.n_item {
+    border-bottom: 1px solid #444444;
+    padding: 5px;
+    position: relative;
+    img {
+        background: #474747 none repeat scroll 0 0;
+        border: 1px solid #35464d;
+        box-shadow: 0 0 5px $mainColor1;
+        max-width: 150px;
+        top: 22%;
+        position: relative;
+    }
+    h2 {
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    .news_image {
+        height: 97px;
+        text-align: center;
+    }
 }
 
-.table {
-    margin-bottom: 0px;
-    background-color: transparent;
-    
+.n_item:last-child {
+    border-bottom: none;
 }
-
-
-}
-
-
-
-
-
 
 
 
 
 @import 'buttons';
-@import 'leftbar', 'rightbar';
-
+@import 'leftbar',
+'rightbar';
+@import 'stats';
+@import 'footer';

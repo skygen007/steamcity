@@ -1,3 +1,4 @@
+<div class="row">
 <div class="col-sm-12 col-md-8">
 
 
@@ -5,24 +6,28 @@
         <!-- Carousel indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="1" ></li>
+
         </ol>   
         <!-- Wrapper for carousel items -->
         <div class="carousel-inner">
             <div class="item active">
-                <img src="/images/steam.png" alt="First Slide">
-                <div class="carousel-caption">
-        <h3>Chania</h3>
-        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-      </div>
+           <div id="statsContainer">
+
+          <div class="row2 fcstat clearfix">
+			                <div class="col col-sm-3"><label>Новых игроков</label> <b>30</b></div>
+    			<div class="col col-sm-3"><label>Всего игроков</label> <b>20</b></div>
+    			<div class="col col-sm-3"><label>Игр сыграно</label> <b>24</b></div>
+    			<div class="col col-sm-3"><label>Сегодня выйграно</label> <b>5.12</b></div>
+            		</div>
+
+           </div>
             </div>
-            <div class="item">
-               <p>test</p>
+
+               <div class="item">
+     <img src="http://placehold.it/450x202">
             </div>
-            <div class="item">
-                <img src="/images/steam.png" alt="Third Slide">
-            </div>
+         
         </div>
         <!-- Carousel controls -->
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">
@@ -33,18 +38,69 @@
         </a>
     </div>
 
-<%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_noborder.png"), '/auth/steam' %>
-
-<% if session.key? :current_user %>
-<h3>Current user:</h3>
-<%= image_tag session[:current_user][:image] %>
-<p><%= session[:current_user][:nickname] %></p>
-<p><%= session[:current_user][:uid] %></p>
-<% end %>
-
-<%= session.inspect %>
 
 
+<div class="box nlist" style="margin-bottom: 0px;">
+								                                    <div class="n_item">
+    									<div class="row">
+    										<div class="col-sm-4">
+    										<div class="news_image">
+    											<a href="/dota-2/news/474"><img src="http://game-tournaments.com/media/news/pic-20151102-512x221-729904239.jpeg"></a>
+    											</div>
+    										</div>
+    										<div class="col-sm-8">
+    											<h2><a href="/dota-2/news/474" title="Alliance забирают путевку на WCA">Alliance забирают путевку на WCA</a></h2>
+    											<div class="news-desc">Отрытые квалификация на World Cyber Arena 2015 для европейского региона подошли к концу. В финальном противостоянии bo3 сошлись Team Empire и Alliance, совсем недавно пережившие не самые лучшие времена. </div>
+    											<time class="label label-default" style="opacity:.5"><i class="fa fa-fw fa-clock-o"></i> 2 ноября 2015</time>
+    										</div>
+    									</div>
+    								</div>
+                                                                    <div class="n_item">
+    									<div class="row">
+    										<div class="col-sm-4">
+    											<div class="news_image">
+    											<a href="/dota-2/news/474"><img src="http://game-tournaments.com/media/news/pic-20151102-512x221-729904239.jpeg"></a>
+    											</div>
+    										</div>
+    										<div class="col-sm-8">
+    											<h2><a href="/dota-2/news/473" title="Team Secret забрали трофей  Nanyang ">Team Secret забрали трофей  Nanyang </a></h2>
+    											<div class="news-desc">Отгремел последний матч Nanyang Dota 2 Championships. Финалисты показали отменную игру, однако сильнее в очередной раз оказались Team Secret. </div>
+    											<time class="label label-default" style="opacity:.5"><i class="fa fa-fw fa-clock-o"></i> 2 ноября 2015</time>
+    										</div>
+    									</div>
+    								</div>
+                                                                    <div class="n_item">
+    									<div class="row">
+    										<div class="col-sm-4">
+    											<div class="news_image">
+    											<a href="/dota-2/news/474"><img src="http://game-tournaments.com/media/news/pic-20151102-512x221-729904239.jpeg"></a>
+    											</div>
+    										</div>
+    										<div class="col-sm-8">
+    											<h2><a href="/dota-2/news/472" title="Virtus.Pro получили прямой инвайт на DotaPit">Virtus.Pro получили прямой инвайт на DotaPit</a></h2>
+    											<div class="news-desc">Dota Pit объявил список первых участников 4 сезона турнира. Помимо этого был анонсирован регламент соревнования и его призовой фонд. </div>
+    											<time class="label label-default" style="opacity:.5"><i class="fa fa-fw fa-clock-o"></i> 1 ноября 2015</time>
+    										</div>
+    									</div>
+
+    								</div>
+    								  <div class="n_item">
+    									<div class="row">
+    										<div class="col-sm-4">
+    											<div class="news_image">
+    											<a href="/dota-2/news/474"><img src="http://game-tournaments.com/media/news/pic-20151102-512x221-729904239.jpeg"></a>
+    											</div>
+    										</div>
+    										<div class="col-sm-8">
+    											<h2><a href="/dota-2/news/472" title="Virtus.Pro получили прямой инвайт на DotaPit">Virtus.Pro получили прямой инвайт на DotaPit</a></h2>
+    											<div class="news-desc">Dota Pit объявил список первых участников 4 сезона турнира. Помимо этого был анонсирован регламент соревнования и его призовой фонд. </div>
+    											<time class="label label-default" style="opacity:.5"><i class="fa fa-fw fa-clock-o"></i> 1 ноября 2015</time>
+    										</div>
+    									</div>
+    									
+    								</div>
+                                                                    
+                                				            </div>
 
 </div>
 <div class="col-sm-12 col-md-4">
@@ -92,4 +148,52 @@
     </table>
 </div>
 
+	<div class="box">
+    <h3>Топ выигрышей</h3>
+    <table class="table table-striped table-condensed">
+        <tbody>
+            <tr>
+                <th>Игрок</th>
+                <th class="text-center" width="32px"><i class="fa fa-usd odtip" data-toggle="tooltip" title="Выигрыш"></i></th>
+                <th class="text-center" width="32px"><i class="fa fa-gamepad odtip" data-toggle="tooltip" title="Игра"></i></th>
+                <th class="text-center" width="67px"><i class="fa fa-fw fa-clock-o odtip" data-toggle="tooltip" title="Время"></i></th>
+            </tr>
+                            <tr>
+                    <td><a href="javascript:;">IWilldominate</a></td>
+                    <td class="text-center vcenter">0.05</td>
+                    <td class="text-center vcenter">R</td>
+                    <td class="text-center vcenter">сегодня</td>
+                </tr>
+                            <tr>
+                    <td><a href="javascript:;">IronBets</a></td>
+                 <td class="text-center vcenter">0.05</td>
+                    <td class="text-center vcenter">R</td>
+                    <td class="text-center vcenter">сегодня</td>
+                </tr>
+                            <tr>
+                    <td><a href="javascript:;" onclick="wms_forecaster(5602,582)">piecemeal</a></td>
+                   <td class="text-center vcenter">0.05</td>
+                    <td class="text-center vcenter">R</td>
+                    <td class="text-center vcenter">сегодня</td>
+                </tr>
+                            <tr>
+                    <td><a href="javascript:;" onclick="wms_forecaster(5156,582)">Live от Uralmass</a></td>
+                   <td class="text-center vcenter">0.05</td>
+                    <td class="text-center vcenter">R</td>
+                    <td class="text-center vcenter">сегодня</td>
+                </tr>
+                            <tr>
+                    <td><a href="javascript:;" onclick="wms_forecaster(7131,582)">KoAN</a></td>
+                   <td class="text-center vcenter">0.05</td>
+                    <td class="text-center vcenter">R</td>
+                    <td class="text-center vcenter">сегодня</td>
+                </tr>
+                    </tbody>
+    </table>
+</div>
+
+
+
+
+</div>
 </div>

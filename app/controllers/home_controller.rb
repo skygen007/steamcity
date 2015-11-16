@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
-  def index
-  	@title = 'title'
+  def test
+  	render json: '{"firstName":"John", "lastName":"Doe"}', status: ok
   end
 
 end

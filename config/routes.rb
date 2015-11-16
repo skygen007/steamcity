@@ -1,18 +1,22 @@
 Rails.application.routes.draw do
  
-  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'home#index'
+  # get '*path' => 'application#index'
 
-  get '/profile', to: 'profile#profile'
 
   post 'auth/steam/callback' => 'welcome#auth_callback'
 
 
-  
+  scope '/api', :defaults => {:format => :json} do
+    get "/contacts", to: "home#test"
+  end
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

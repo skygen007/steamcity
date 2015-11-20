@@ -11,12 +11,14 @@
 </div>
 
  <% else %>
- 
+
 <div id="login_form">
 Авторизируйся через свой Steam аккаунт!
 <a href="/auth/steam"><img src="/images/steam.png" alt="steam"></a>
 
 <% end %>
+
+<%= debug(session) %>
 
 </div>
 

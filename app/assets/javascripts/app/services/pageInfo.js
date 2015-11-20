@@ -17,11 +17,12 @@ var pageContent = function($http) {
 }
 
 
-mainApp.factory('pageContent', pageContent);
+//mainApp.factory('pageContent', pageContent);
 
-//mainApp.factory( 'pageContent', [function( $resource){
-//return new pageContent( $http );
-//}] );
+
+mainApp.factory( 'pageContent', [ '$http', function( $http ){
+	return new pageContent( $http );
+}] );
 
 // return $http.get("api/home").then(function(response) {
 

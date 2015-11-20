@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   # get '*path' => 'application#index'
 
 
-  post 'auth/steam/callback' => 'welcome#auth_callback'
+  match '/auth/:provider/callback', to: 'sessions#create', via: :all
+  delete '/logout', to: 'sessions#destroy', as: :logout
 
 
   scope '/api', :defaults => {:format => :json} do

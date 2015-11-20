@@ -7,14 +7,14 @@ var pageContent = function($http) {
 
         });
 
-    }
+    };
 
     return {
         getPageContent: getPageContent
 
-    }
+    };
 
-}
+};
 
 
 //mainApp.factory('pageContent', pageContent);

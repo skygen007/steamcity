@@ -1,5 +1,3 @@
-class User < ActiveRecord::Base
-
 class << self
   def from_omniauth(auth)
     info = auth['info']
@@ -12,5 +10,4 @@ class << self
     user
   end
 end
-	
-end
+

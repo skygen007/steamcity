@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # get '*path' => 'application#index'
 
 
-  match '/auth/:provider/callback', to: 'welcome#auth_callback', via: :all
+  match '/auth/:provider/callback', to: 'sessions#create', via: :all
   delete '/logout', to: 'sessions#destroy', as: :logout
 
 

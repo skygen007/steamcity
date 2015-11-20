@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
 
   scope '/api', :defaults => {:format => :json} do
-    get "/contacts", to: "home#test"
+    get "/home", to: "home#homePage"
   end
 
 

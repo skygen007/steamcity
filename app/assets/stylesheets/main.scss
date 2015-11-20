@@ -32,7 +32,7 @@ a {
     margin-bottom: 9px;
 }
 
-
+/* Block */
 
 .box {
     background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgba(58, 58, 58, 1) 0px, rgba(27, 27, 27, 1) 25%, rgba(27, 27, 27, 1) 100%) repeat scroll 0 0;
@@ -51,11 +51,11 @@ a {
         margin-top: 10px;
         font-size: 12px;
     }
-    .table {
-        margin-bottom: 0px;
-        background-color: transparent;
-    }
+
 }
+
+/* News items */
+
 .n_item {
     border-bottom: 1px solid #444444;
     padding: 5px;
@@ -80,6 +80,22 @@ a {
 
 .n_item:last-child {
     border-bottom: none;
+}
+
+/* Tables */
+
+.chartTable{
+
+margin-bottom: 0px;
+
+th:not(:first-child) {
+    text-align:center;
+}
+
+td:not(:first-child) {
+    text-align:center;
+}
+
 }
 
 

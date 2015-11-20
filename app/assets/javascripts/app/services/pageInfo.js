@@ -1,0 +1,31 @@
+var pageContent = function($http) {
+
+    var getPageContent = function($scope, url) {
+
+        $http.get("api/" + url).then(function(response) {
+            $scope.pageContent = response.data;
+
+        });
+
+    }
+
+    return {
+        getPageContent: getPageContent
+
+    }
+
+}
+
+
+mainApp.factory('pageContent', pageContent);
+
+//mainApp.factory( 'pageContent', [function( $resource){
+//return new pageContent( $http );
+//}] );
+
+// return $http.get("api/home").then(function(response) {
+
+
+//  return response.data;
+
+// });

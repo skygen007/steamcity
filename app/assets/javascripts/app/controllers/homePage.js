@@ -1,7 +1,1 @@
-mainApp.controller("homePage", ['$scope', 'pageContent', function($scope, pageContent) {
-        pageContent.getPageContent($scope, "home");
-
-
-
-    }
-]);
+mainApp.controller("homePage",["$scope","pageContent",function(e,n){n.getPageContent(e,"home")}]);

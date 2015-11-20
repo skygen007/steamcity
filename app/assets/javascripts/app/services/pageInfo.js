@@ -1,1 +1,24 @@
-var pageContent=function(n){var t=function(t,e){n.get("api/"+e).then(function(n){t.pageContent=n.data})};return{getPageContent:t}};mainApp.factory("pageContent",["$http",function(n){return new pageContent(n)}]);
+var pageContent = function($http) {
+
+    var getPageContent = function($scope, url) {
+
+        $http.get("api/" + url).then(function(response) {
+            $scope.pageContent = response.data;
+
+        });
+
+    };
+
+    return {
+        getPageContent: getPageContent
+
+    };
+
+};
+
+//mainApp.factory('pageContent', pageContent);
+
+mainApp.factory( 'pageContent', [ '$http', function( $http ){
+	return new pageContent( $http );
+}] );
+

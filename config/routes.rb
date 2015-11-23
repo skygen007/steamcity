@@ -9,9 +9,9 @@ Rails.application.routes.draw do
   # get '*path' => 'application#index'
 
 
-  match '/auth/:provider/callback', to: 'sessions#create', via: :all
-  delete '/logout', to: 'sessions#destroy', as: :logout
-
+  #match '/auth/:provider/callback', to: 'sessions#create', via: :all
+  get '/logout', to: 'sessions#destroy', as: :logout
+  get "/test", to: "sessions#create"
 
   scope '/api', :defaults => {:format => :json} do
     get "/home", to: "home#homePage"

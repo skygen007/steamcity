@@ -1,18 +1,10 @@
 class User < ActiveRecord::Base
-
-class << self
-  def from_omniauth(auth)
-    info = auth['info']
-    session[:user_id] = auth;
-    session[:test] = 'auth';
-    # Convert from 64-bit to 32-bit
-    user = find_or_initialize_by(uid: (auth['uid'].to_i - 76561197960265728).to_s)
-    user.nickname = info['nickname']
-    user.avatar_url = info['image']
-    user.profile_url = info['urls']['Profile']
-    user.save!
-    user
+  def self.from_omniauth(auth)
+  	  user = find_or_initialize_by(uid: auth[:uid])
+      user.uid = auth[:uid]
+      user.nickname = auth[:info][:nickname]
+      user.avatar_url = auth[:extra][:raw_info][:avatarfull]
+      user.save!
+      user
   end
-end
-
 end

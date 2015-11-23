@@ -2,10 +2,11 @@
 
  <% if current_user %>
 <div id="user_info">
-<img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg" class="img-circle" alt="logo">
+<%= image_tag current_user.avatar_url, alt: 'Avatar', class: 'img-circle' %>
+
 <span id="user_settings" class="user_buttons"><a href="#" title="Профиль"><i class="fa fa-cogs"></i></a></span>
-<span id="user_signout" class="user_buttons"><a href="#" title="Выход"><i class="fa fa-sign-out"></i></a></span>
-<div id="user_login" class="overflow">IWillDominate</div>
+<span id="user_signout" class="user_buttons"><a href="<%= logout_path %>" title="Выход"><i class="fa fa-sign-out"></i></a></span>
+<div id="user_login" class="overflow"><%= current_user.nickname %></div>
 <div class="overflow">Баланс: <span id="user_money">0.000</span>$</div>
 <div class="overflow">Бонус: <span id="user_bonus">0.000</span>$</div>
 </div>
@@ -15,14 +16,11 @@
 <div id="login_form">
 Авторизируйся через свой Steam аккаунт!
 <a href="/auth/steam"><img src="/images/steam.png" alt="steam"></a>
-
+</div>
 <% end %>
 
-<%= 
-session[:test].inspect
-session[:user_id].inspect %>
 
-</div>
+
 
 
 <div id="chat">
